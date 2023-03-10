@@ -31,7 +31,7 @@ const makeRequest = async (
     //     navigate("/error");
     //   }
     // }
-    throw new Error("kumar")
+    return e
   }
 };
 
