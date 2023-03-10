@@ -1,7 +1,4 @@
 const axios = require("axios");
-// const { BACKEND_URL } = require("../../constants/apiEndPoints");
-// const { ERROR_ROUTE } = require("../../constants/routes");
-
 const makeRequest = async (
   apiEndPoint,
   dynamicConfig,
@@ -21,16 +18,6 @@ const makeRequest = async (
     return data;
   }
   catch(e){
-    // if(navigate){
-    //   const errorStatus = e.response?.status
-    //   if(errorStatus)
-    //   {
-    //     navigate(`/error/${errorStatus}`);
-    //   }
-    //   else{
-    //     navigate("/error");
-    //   }
-    // }
     return e
   }
 };

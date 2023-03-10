@@ -7,21 +7,12 @@ const getContentType = async(contentTypeId)=>{
             id: contentTypeId
         }
     })
-    // const details = [];
-    // await foundUser.cartDetails.reduce(async(products,productId)=>{
-    //     const product = await db.Product.findOne({
-    //         where:{
-    //             id:productId
-    //         }
-    //     })
-    //     return details.push(product.name);
-    // },details)
     
-    // return details;
     return contentTypeData
 };
 
 const createContentType = async(contentTypeData)=>{
+    console.log(contentTypeData)
     const result = await db.ContentType.create(contentTypeData)
     return result
 };

@@ -15,6 +15,7 @@ const getContentTypeController = async(req, res, next)=>{
 }
 
 const createContentTypeController = async(req, res, next)=>{
+    console.log(req.body)
     try{
         const result = await createContentType(req.body);
         res.status(200).json({
